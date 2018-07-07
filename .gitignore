@@ -1,0 +1,6 @@
+.settings/
+.worksheet/
+bin/
+.cache-min
+.classpath
+.project
