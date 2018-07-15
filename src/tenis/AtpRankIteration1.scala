@@ -5,18 +5,18 @@ import java.time.LocalDate
 import java.time.temporal.TemporalUnit
 import java.time.temporal.ChronoUnit
 
-class AtpRank (pointEntries: List[PointRankEntry]) {
+class AtpRankIteration1 (pointEntries: List[PointRankEntry]) {
   
   val NumberOfWeeksAPointIsValid = 52;
   
-  def addPointEntry(entry: PointRankEntry): AtpRank = {
+  def addPointEntry(entry: PointRankEntry): AtpRankIteration1 = {
     
     if(entry.date.compareTo(LocalDate.now()) > 0) {
       throw new RuntimeException("The date can not be after today")
     }
     
     
-    return new AtpRank(pointEntries :+ entry)
+    return new AtpRankIteration1(pointEntries :+ entry)
   }
   
   def calculateRanking() : List[RankListEntry] = {
