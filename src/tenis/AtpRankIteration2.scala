@@ -12,8 +12,8 @@ class AtpRankIteration2(pointEntries: Map[Player, List[RankMapEntry]]) {
    *  If the player takes more/less than 8 of the mandatory tournaments, then the ext
    */
   
-  val ExpectedNumberOfMasters = 5
-  val ExpectedNumberOfMinorTournaments = 3
+  val ExpectedNumberOfMasters = 13
+  val ExpectedNumberOfMinorTournaments = 6
   
 
   def addPointEntry(entry: PointRankEntry): AtpRankIteration2 = {
